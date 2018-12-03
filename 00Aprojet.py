@@ -9,7 +9,13 @@ elif year % 100 == 0:
 elif year % 4 == 0:
     bissextile = True
 else:
-    bissextile = False   
+    bissextile = False
+
+if bissextile:
+    print("L'année saisie est bissextile.")
+else:
+    print("L'année saisie n'est pas bissextile.")
+   
 
 
 #if year / 4 and year / 100 and year / 400:
