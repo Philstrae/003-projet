@@ -1,7 +1,8 @@
 
 try:
     import package.fonctions
-    fonctions.table(5) # Appel de la fonction table
+    fonctions.table(nb) # Appel de la fonction table
+    assert nb < 0
 
 except NameError:
     print("La variable n'a pas été définie.")
@@ -12,6 +13,6 @@ except TypeError:
 except ZeroDivisionError:
     print("La variable est égale à 0.")
 
-else:    
+finally:    
     from package.fonctions import table
     table(5) # Appel de la fonction table
